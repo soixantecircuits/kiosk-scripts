@@ -71,6 +71,9 @@ echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | 
 sudo apt-get update -y
 sudo apt-get install -y mongodb-org
 
+# node tools
+sudo npm i -g pm2
+
 # install chrome 
 # -----------------
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
