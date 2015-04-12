@@ -13,7 +13,8 @@ dconf write /org/nemo/desktop/show-desktop-icons false
 #disable notifications
 # -----------------
 #TODO: check that removing update notifications on ubuntu-gnome is working
-#TODO: remove error "System detect error" notifications
+#TODO: remove error "System progeam problem detected" notifications
+# "Do you want to report the problem now"
 gsettings set org.gnome.nm-applet disable-disconnected-notifications "true"
 gsettings set org.gnome.nm-applet disable-connected-notifications "true"
 gsettings set org.gnome.nm-applet disable-vpn-notifications "true"
