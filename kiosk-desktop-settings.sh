@@ -12,9 +12,6 @@ dconf write /org/nemo/desktop/show-desktop-icons false
 
 #disable notifications
 # -----------------
-#TODO: check that removing update notifications on ubuntu-gnome is working
-#TODO: remove error "System progeam problem detected" notifications
-# "Do you want to report the problem now"
 gsettings set org.gnome.nm-applet disable-disconnected-notifications "true"
 gsettings set org.gnome.nm-applet disable-connected-notifications "true"
 gsettings set org.gnome.nm-applet disable-vpn-notifications "true"
@@ -22,8 +19,12 @@ gsettings set org.gnome.nm-applet disable-wifi-create "true"
 gsettings set org.gnome.nm-applet suppress-wireless-networks-available "true"
 gsettings set org.gnome.desktop.notifications show-banners "true"
 gsettings set org.gnome.desktop.notifications show-in-lock-screen "true"
+#TODO: check that removing update notifications on ubuntu-gnome is working
 gsettings set org.gnome.settings-daemon.plugins.updates frequency-updates-notification 0
 dconf write /org/cinnamon/display-notifications false
+#TODO: check below liner is working to remove error "System progeam problem detected" notifications
+# "Do you want to report the problem now"
+sudo sed -i 's/enabled=1/enabled=0/' /etc/default/apport
 
 #disable password after sleep / and disable sleep.
 # -----------------
