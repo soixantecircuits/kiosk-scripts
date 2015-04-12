@@ -12,6 +12,7 @@ sudo apt-get install dconf-tools --yes
 # -----------------
 sudo apt-get install vim --yes
 sudo apt-get install git
+sudo apt-get install openssh-server
 sudo apt-get install build-essential --yes
 sudo apt-get install -y curl
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
