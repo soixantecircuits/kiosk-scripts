@@ -54,7 +54,28 @@ sudo add-apt-repository -y ppa:chris-lea/node.js
 sudo apt-get update -y
 sudo apt-get install -y nodejs npm
 sudo apt-get install -y nodejs-legacy
+sudo chown -R `whoami` $HOME/.npm/
+sudo npm update
 
+# automation tools
+sudo npm i -g grunt-cli gulp
+sudo npm i -g bower
+sudo npm i -g yo
+sudo npm i -g cordova ionic
+
+# meteor tools
+curl https://install.meteor.com/ | sh
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | tee /etc/apt/sources.list.d/mongodb.list
+sudo apt-get update -y
+sudo apt-get install -y mongodb-org
+
+# install chrome 
+# -----------------
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+sudo apt-get update -y
+sudo apt-get install -y google-chrome-stable
 
 # install teamviewer
 # -----------------
