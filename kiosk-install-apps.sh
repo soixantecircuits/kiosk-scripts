@@ -56,6 +56,7 @@ sudo add-apt-repository -y ppa:chris-lea/node.js
 sudo apt-get update -y
 sudo apt-get install -y nodejs npm
 sudo apt-get install -y nodejs-legacy
+mkdir  $HOME/.npm/
 sudo chown -R `whoami` $HOME/.npm/
 sudo npm update
 
