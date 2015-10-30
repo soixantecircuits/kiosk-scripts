@@ -22,6 +22,7 @@ sudo apt-get install -y sublime-text-installer
 cd $HOME/.config/sublime-text-3/Installed\ Packages
 wget https://sublime.wbond.net/Package%20Control.sublime-package
 cd
+sudo apt-get install avahi-daemon avahi-discover libnss-mdns libavahi-compat-libdnssd-dev
 
 # install c++ stuff
 # -----------------
@@ -86,7 +87,7 @@ sudo apt-get install -y google-chrome-stable
 
 # install image stuff
 # -----------------
-sudo apt-get install -y imagemagick
+sudo apt-get install -y imagemagick graphicsmagick
 
 # install teamviewer
 # -----------------
