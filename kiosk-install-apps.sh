@@ -89,6 +89,12 @@ sudo apt-get install -y google-chrome-stable
 # -----------------
 sudo apt-get install -y imagemagick graphicsmagick
 
+# install camera drivers
+# -----------------
+sudo add-apt-repository -y ppa:pj-assis/
+sudo apt-get update
+sudo apt-get install guvcview
+
 # install teamviewer
 # -----------------
 # TODO: check still working on ubuntu gnome
