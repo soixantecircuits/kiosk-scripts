@@ -95,6 +95,12 @@ sudo add-apt-repository -y ppa:pj-assis/
 sudo apt-get update
 sudo apt-get install guvcview
 
+# install video stuff
+# -----------------
+sudo add-apt-repository ppa:kirillshkrogalev/ffmpeg-next && sudo apt-get update -qq
+sudo apt-get update
+sudo apt-get install ffmpeg
+
 # install teamviewer
 # -----------------
 # TODO: check still working on ubuntu gnome
