@@ -19,6 +19,7 @@ sudo apt-get install -y curl
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
 sudo apt-get update -y
 sudo apt-get install -y sublime-text-installer
+sudo apt-get install mercurial
 cd $HOME/.config/sublime-text-3/Installed\ Packages
 wget https://sublime.wbond.net/Package%20Control.sublime-package
 cd
