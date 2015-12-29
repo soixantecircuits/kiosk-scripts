@@ -118,6 +118,6 @@ sudo apt-get install ffmpeg
 
 # install dropbox 
 # -----------------
-sudo add-apt-repository ppa:hertzog/nautilus-dropbox
-sudo apt-get update
-sudo apt-get install nautilus-dropbox --yes
+# sudo add-apt-repository ppa:hertzog/nautilus-dropbox
+# sudo apt-get update
+# sudo apt-get install nautilus-dropbox --yes
