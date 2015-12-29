@@ -1,8 +1,9 @@
 #!/bin/bash
  
-# install softwares
+# install and upgrade softwares
 # -----------------
 sudo apt-get update
+sudo apt-get upgrade
 
 # install tools for desktop config
 # -----------------
