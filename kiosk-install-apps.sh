@@ -76,11 +76,11 @@ sudo npm i -g yo
 sudo npm i -g cordova ionic
 
 # meteor tools
-curl https://install.meteor.com/ | sh
-apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
-echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | tee /etc/apt/sources.list.d/mongodb.list
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
 sudo apt-get update -y
 sudo apt-get install -y mongodb-org
+curl https://install.meteor.com/ | sh
 
 # node tools
 sudo npm i -g pm2
