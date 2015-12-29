@@ -55,12 +55,18 @@ sudo apt-get install gdevilspie --yes
  
 # install nodejs stuff
 # -----------------
-sudo add-apt-repository -y ppa:chris-lea/node.js
-sudo apt-get update -y
-sudo apt-get install -y nodejs npm
-sudo apt-get install -y nodejs-legacy
-mkdir  $HOME/.npm/
-sudo chown -R `whoami` $HOME/.npm/
+# this way use nvm (Node Version Manager) which is IMHO super usefull
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.30.1/install.sh | bash
+exec bash
+nvm install 4.2.3 # latest LTS release on the 29-12-2015
+nvm alias default node
+# or you can go with the standard way
+# sudo add-apt-repository -y ppa:chris-lea/node.js
+# sudo apt-get update -y
+# sudo apt-get install -y nodejs npm
+# sudo apt-get install -y nodejs-legacy
+# mkdir  $HOME/.npm/
+# sudo chown -whoami `R` $HOME/.npm/
 sudo npm update
 
 # automation tools
