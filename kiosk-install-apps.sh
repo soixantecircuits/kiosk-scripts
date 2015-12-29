@@ -59,7 +59,7 @@ sudo apt-get install gdevilspie --yes
 # this way use nvm (Node Version Manager) which is IMHO super usefull
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.30.1/install.sh | bash
 exec bash
-nvm install 4.2.3 # latest LTS release on the 29-12-2015
+nvm install 4.2.4 # latest LTS release on the 29-12-2015
 nvm alias default node
 # or you can go with the standard way
 # sudo add-apt-repository -y ppa:chris-lea/node.js
