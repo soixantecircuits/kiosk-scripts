@@ -1,5 +1,7 @@
 #!/bin/bash
- 
+# Change the text editor used to enter commit messages
+git config --global core.editor vim
+
 # install and upgrade softwares
 # -----------------
 sudo apt-get update
