@@ -1,7 +1,5 @@
 #!/bin/bash
-# Change the text editor used to enter commit messages
-git config --global core.editor vim
-
+# Please set ssh key to no passphrase and launch script using bash script.sh for entire script to take effect
 # install and upgrade softwares
 # -----------------
 sudo apt-get update
@@ -27,6 +25,17 @@ cd $HOME/.config/sublime-text-3/Installed\ Packages
 wget https://sublime.wbond.net/Package%20Control.sublime-package
 cd
 sudo apt-get install avahi-daemon avahi-discover libnss-mdns libavahi-compat-libdnssd-dev
+
+# Change the text editor used to enter commit messages
+git config --global core.editor vim
+
+# Get Emmanuel's vim and install it
+cd $HOME
+mkdir -p sources
+cd sources
+git clone git@github.com:emmanuelgeoffray/dotfiles.git vim 
+cd vim 
+cp .vimrc ../../.vimrc
 
 # install c++ stuff
 # -----------------
@@ -61,8 +70,11 @@ sudo apt-get install gdevilspie --yes
 # this way use nvm (Node Version Manager) which is IMHO super usefull
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.30.1/install.sh | bash
 exec bash
+nvm install 0.10.36
+nvm install 0.12.7
 nvm install 4.2.4 # latest LTS release on the 29-12-2015
 nvm alias default node
+
 # or you can go with the standard way
 # sudo add-apt-repository -y ppa:chris-lea/node.js
 # sudo apt-get update -y
