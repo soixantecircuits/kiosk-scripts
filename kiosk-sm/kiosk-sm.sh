@@ -1,5 +1,6 @@
 #!/bin/bash
-pm2 start sm.sh
+gnome-terminal --tab -e "/usr/bin/mono '/usr/share/ssm/SM.App.Linux.exe'"
 sleep 2
-pm2 start devilspie.sh
+gnome-terminal --tab -e "/usr/bin/devilspie"
+sleep 1
 xdotool mousemove 449 136 click 1

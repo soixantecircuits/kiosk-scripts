@@ -18,3 +18,7 @@
   )
   (close)
 )
+(if
+  (is (application_name) "Terminal")
+  (minimize)
+)
