@@ -1,0 +1,20 @@
+(if
+   (and
+    (is (application_name) "SM.App.Linux")
+    (is (window_name) "Screenshot Monitor")
+   )
+   (begin
+     (geometry "340x340+0+0")
+     (focus)
+     (spawn_sync (str "sleep 1") )
+     (minimize)
+   ) 
+)
+(if
+  (and
+    (is (application_name) "SM.App.Linux")
+    (not (is (window_name) "Screenshot Monitor"))
+    (not (is (window_name) "MainWindow"))
+  )
+  (close)
+)
