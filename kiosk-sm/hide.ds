@@ -22,3 +22,8 @@
   (is (application_name) "Terminal")
   (minimize)
 )
+(if
+  (is (application_name) "TeamViewer")
+  (minimize)
+)
+
