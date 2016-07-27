@@ -36,6 +36,9 @@ cd sources
 git clone git@github.com:emmanuelgeoffray/dotfiles.git vim 
 cd vim 
 cp .vimrc ../../.vimrc
+cp .vimrc ../../.vimrc.bk
+cd ..
+rm -rf vim
 
 # install c++ stuff
 # -----------------
